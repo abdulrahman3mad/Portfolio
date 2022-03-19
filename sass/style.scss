@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(240, 240, 240) !important;
+}
+
+.upper-line, .lower-line{
+    height:15px;
+    background-color:rgb(93, 93, 93);
+}
+
+.lower-line{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+}
+
+header{
+    h1{
+        &:hover{
+            color: #0C7B93 !important; 
+        }
+    }
+    li{
+        margin:0 10px;
+        i{
+            font-size:1.3rem;
+            color:black;
+            &:hover{
+                color:#0C7B93
+            }
+        }
+    }
+    img{
+        width:150px;
+        height:150px;
+        object-fit: cover;
+    }
+    span{
+        font-size: 0.9em;
+        color:rgb(180, 180, 180);
+    }
+}
