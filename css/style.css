@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap');
+
+body {
+    background-color: rgba(10, 76, 91, 0.601);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-info .hero-img img {
+    padding: 2px;
+    border: 1px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.hero-info .hero-name {
+    padding-top: 5px;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.hero-info .bio {
+    line-height: 1.5;
+    padding-top: 15px;
+    width: max(65vw, 300px);
+}
+
+.hero-info .sites {padding-top: 20px;}
+
+/* Start Projects */
+.portfolio {padding: 100px 3vw;}
+.portfolio span{
+    padding-left:20px;
+    color:rgb(253, 253, 253);
+    text-align: center;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.projects,
+.other-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-projects .project {
+    width: calc(100%/4 - 40px);
+    margin: 20px;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.projects .project img {
+    width: 100%;
+    position: relative;
+}
+
+/* End Projects */
+
+/* Start Other Project */
+.other-projects {
+    padding-top: 10px;
+}
+
+.other-projects .project {
+    background-color: rgb(44, 44, 44);
+    margin: 20px;
+    padding: 20px;
+    width: calc(100%/4 - 40px);
+    color: white;
+}
+
+.other-projects .project img {
+    width: 100%;
+    min-height: 200px;
+    max-height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+.other-projects .project:hover img {
+    transform: scale(1.02);
+}
+
+.other-projects .project p {
+    padding-top: 10px;
+}
+
+/* End Other Project */
